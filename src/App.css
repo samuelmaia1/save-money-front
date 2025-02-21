@@ -1,19 +1,10 @@
 #root {
-  max-width: 1280px;
+  max-width: 100%;
   margin: 0;
   padding: 0;
-
-  --text-color: #333;
-  --background: #fff;
-  --button: #ABF6A6;
 }
 
-[data-theme="dark"] {
-  --text-color: #fff;
-  --background: #333;
-}
-
-body{
-  background-color: var(--background);
-  color: var(--text-color)
+a{
+  text-decoration: none;
+  color: var(--text-color);
 }

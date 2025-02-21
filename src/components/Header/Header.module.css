@@ -1,0 +1,32 @@
+.header{
+    font-family: var(--header-font);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.money{
+    color: var(--logo-color);
+}
+
+.containerNavbar{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.navbar{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.loginButton{
+    width: 6rem;
+    height: 2rem;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    background-color: var(--logo-color);
+    font-weight: 600;
+}

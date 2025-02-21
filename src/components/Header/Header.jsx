@@ -6,31 +6,37 @@ import Sun from '../../assets/sol.png'
 import Moon from '../../assets/lua.png'
 
 export const Header = () => {
-
-    const {theme, toggleTheme} = useContext(ThemeContext)
-
     return (
         <>
             <header className={Style.header}>
                 <ContainerNavbar />
 
-                <div className={Style.accountNav}>
-                    <img src={theme === 'light' ? Sun : Moon} alt="" onClick={toggleTheme} className={Style.lightModeImage}/>
-                    <button className={Style.loginButton}>
-                        Login
-                    </button>
-                </div>
+                <AccountNav />
             </header>
         </>
+    )
+}
+
+const AccountNav = () => {
+
+    const {theme, toggleTheme} = useContext(ThemeContext)
+
+    return (
+        <div className={Style.accountNav}>
+            <img src={theme === 'light' ? Sun : Moon} alt="" onClick={toggleTheme} className={Style.lightModeImage}/>
+            <button className={Style.loginButton}>
+                Login
+            </button>
+        </div>
     )
 }
 
 const ContainerNavbar = () => {
     return (
         <div className={Style.containerNavbar}>
-            <p>
+            <Link>
                 Save<strong className={Style.money}>Money</strong>
-            </p>
+            </Link>
 
             <nav className={Style.navbar}>
                 <Link to="">Ganhos</Link>

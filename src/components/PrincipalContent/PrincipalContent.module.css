@@ -23,3 +23,16 @@
 .content p{
     font-size: 1.25rem;
 }
+
+.containerChart{
+    width: 40%;
+    margin-top: 5rem;
+}
+
+.containerChart a{
+    padding: .5rem;
+    background-color: var(--logo-color);
+    color: var(--background);
+    border-radius: 8px;
+    font-weight: 600;
+}

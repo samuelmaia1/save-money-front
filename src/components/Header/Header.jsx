@@ -28,9 +28,9 @@ const AccountNav = () => {
     return (
         <div className={Style.accountNav}>
             <img src={theme === 'light' ? Sun : Moon} alt="" onClick={toggleTheme} className={Style.lightModeImage}/>
-            <button className={Style.loginButton}>
+            <Link className={Style.loginButton} to={isLogged ? user.userName : '/login'}>
                 {isLogged ? user.userName : 'Login'}
-            </button>
+            </Link>
         </div>
     )
 }

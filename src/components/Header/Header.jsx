@@ -1,9 +1,10 @@
-import { useContext } from 'react'
+import { useContext, useEffect } from 'react'
 import Style from './Header.module.css'
 import { Link } from 'react-router-dom'
 import { ThemeContext } from '../../context/ThemeContext'
 import Sun from '../../assets/sol.png'
 import Moon from '../../assets/lua.png'
+import { LoginContext } from '../../context/LoginContext'
 
 export const Header = () => {
     return (
@@ -19,13 +20,16 @@ export const Header = () => {
 
 const AccountNav = () => {
 
+    const {isLogged, user} = useContext(LoginContext)
     const {theme, toggleTheme} = useContext(ThemeContext)
+
+    console.log(user)
 
     return (
         <div className={Style.accountNav}>
             <img src={theme === 'light' ? Sun : Moon} alt="" onClick={toggleTheme} className={Style.lightModeImage}/>
             <button className={Style.loginButton}>
-                Login
+                {isLogged ? user.userName : 'Login'}
             </button>
         </div>
     )

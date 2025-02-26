@@ -90,8 +90,8 @@ export const LineChart = ({values}) => {
           {
             label: 'Crescimento do Investimento',
             data: [5000, 5200, 5400, 5700, 6000, 6300, 6700, 7100, 7600, 8200, 8900, 9600],
-            borderColor: '#ABF6A6',
-            backgroundColor: '#ABF6A6',
+            borderColor: '#73D76C',
+            backgroundColor: '#73D76C',
             fill: true,
             tension: 0.4,
           },

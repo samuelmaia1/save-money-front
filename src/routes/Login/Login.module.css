@@ -1,0 +1,66 @@
+.loginContainer{
+    height: 30rem;
+}
+
+.containerLoginForm, .card{
+    padding: 2.5rem 2rem;
+    width: 25rem;
+}
+
+
+
+.containerInputForm{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    margin-bottom: 1rem;
+}
+
+label{
+    font-weight: bold;
+}
+
+.inputForm{
+    border-radius: 20px;
+    height: 2rem;
+    border: none;
+    background-color: #4B4B4B;
+    color: var(--text-color);
+    padding: 0 1rem;
+}
+
+.buttonSubmit{
+    background-color: var(--logo-color);
+    font-weight: bold;
+    padding: 1rem;
+    border: none;
+    border-radius: 8px;
+    width: 10rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    cursor: pointer;
+}
+
+.card{
+    background-color: var(--logo-color);
+    color: #333;
+    box-shadow: #00000046 0px 30px 30px -10px;
+    border-radius: 1rem;
+}
+
+span{
+    text-decoration: line-through;
+}
+
+.registerButton{
+    color: #333;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.registerButton:hover{
+    text-decoration: underline;
+}

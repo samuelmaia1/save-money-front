@@ -5,7 +5,7 @@ import App from './App.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { ThemeContextProvider } from './context/ThemeContext.jsx'
 import { LoginContextProvider } from './context/LoginContext.jsx'
-import { Login } from './routes/Login.jsx'
+import { Login } from './routes/Login/Login.jsx'
 import { Home } from './routes/Home.jsx'
 
 const router = createBrowserRouter([
